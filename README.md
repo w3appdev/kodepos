@@ -35,7 +35,7 @@ Jumlah Kota+Kabupaten
 <pre><code>SELECT COUNT(*) AS `Total Kota+Kabupaten`<br>
 FROM (SELECT kodewilayah FROM kodewilayah<br>
       GROUP BY LEFT(kodewilayah,5)) AS kodewilayah
-</code></pre>      
+</code></pre>
 
 
 Jumlah Kecamatan
