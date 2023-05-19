@@ -1,4 +1,4 @@
-SQL SCRIPT (MYXQL)
+SQL SCRIPT (MYSQL)
 <h3><strong>Daftar Kode Wilayah NKRI</strong> (+KODE POS)</h3>Sumber:<a href="https://www.nomor.net">https://www.nomor.net</a>
 
 <br>Update per 18 Mei 2023:<br/>
