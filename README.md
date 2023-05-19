@@ -10,14 +10,14 @@ Jumlah Propinsi
 
 <pre><code>SELECT COUNT(*) AS `Total Propinsi`<br>
 FROM (SELECT kodewilayah<br>
-      FROM kodewilayah<br>
+      FROM kodewilayah2023<br>
       GROUP BY namapropinsi) AS kodewilayah
 </code></pre>
 
 
 Jumlah Kabupaten
 <pre><code>SELECT COUNT(*) AS `Total Kabupaten`<br>
-FROM (SELECT kodewilayah FROM kodewilayah<br>
+FROM (SELECT kodewilayah FROM kodewilayah2023<br>
       WHERE kodekabkota='Kabupaten'<br>
       GROUP BY LEFT(kodewilayah,5)) AS kodewilayah
 </code></pre>
@@ -25,7 +25,7 @@ FROM (SELECT kodewilayah FROM kodewilayah<br>
 
 Jumlah Kota
 <pre><code>SELECT COUNT(*) AS `Total Kota`<br>
-FROM (SELECT kodewilayah FROM kodewilayah<br>
+FROM (SELECT kodewilayah FROM kodewilayah2023<br>
       WHERE kodekabkota='Kota'<br>
       GROUP BY LEFT(kodewilayah,5)) AS kodewilayah
 </code></pre>      
@@ -33,35 +33,35 @@ FROM (SELECT kodewilayah FROM kodewilayah<br>
 
 Jumlah Kota+Kabupaten
 <pre><code>SELECT COUNT(*) AS `Total Kota+Kabupaten`<br>
-FROM (SELECT kodewilayah FROM kodewilayah<br>
+FROM (SELECT kodewilayah FROM kodewilayah2023<br>
       GROUP BY LEFT(kodewilayah,5)) AS kodewilayah
 </code></pre>
 
 
 Jumlah Kecamatan
 <pre><code>SELECT COUNT(*) AS `Total Kecamatan`<br>
-FROM (SELECT kodewilayah FROM kodewilayah<br>
+FROM (SELECT kodewilayah FROM kodewilayah2023<br>
       GROUP BY LEFT(kodewilayah,8)) AS kodewilayah
 </code></pre>      
 
 
 Jumlah Desa/Kelurahan
 <pre><code>SELECT COUNT(*) AS `Total Desa/Kelurahan`<br>
-FROM kodewilayah</code></pre>
+FROM kodewilayah2023</code></pre>
 
 <b>Contoh Rekap</b>:
 <pre><code>SELECT (SELECT COUNT(*)
         FROM (SELECT NULL 
-              FROM kodewilayah
+              FROM kodewilayah2023
               GROUP BY namapropinsi) Propinsi) AS 'Total Propinsi',
        (SELECT COUNT(*)
         FROM (SELECT NULL 
-              FROM kodewilayah 
+              FROM kodewilayah2023 
               GROUP BY LEFT(kodewilayah,5)) KotaKabupaten)  AS `Total Kota+Kabupaten`,
        (SELECT COUNT(*)
         FROM (SELECT NULL 
-              FROM kodewilayah 
+              FROM kodewilayah2023 
               GROUP BY LEFT(kodewilayah,8)) Kecamatan)  AS `Total Kecamatan`,
        (SELECT COUNT(*) 
-        FROM kodewilayah)  AS `Total Desa/Kelurahan`
+        FROM kodewilayah2023)  AS `Total Desa/Kelurahan`
 </code></pre>
