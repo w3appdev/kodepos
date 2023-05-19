@@ -1,8 +1,8 @@
 SQL SCRIPT (MYXQL)
 <h3><strong>Daftar Kode Wilayah NKRI</strong> (+KODE POS)</h3>Sumber:<a href="https://www.nomor.net">https://www.nomor.net</a>
 
-<br>Update per 23 Juli 2020:<br/>
-<b>34</b> provinsi, <b>514</b> kota+kabupaten, <b>7.201</b> kecamatan/distrik, <b>83.436</b> desa/kelurahan.
+<br>Update per 18 Mei 2023:<br/>
+<b>38</b> propinsi, <b>514</b> kota+kabupaten, <b>7.277</b> kecamatan/distrik, <b>83.763</b> desa/kelurahan.
 
 <br><b>Contoh Verifikasi</b>
 
@@ -11,7 +11,7 @@ Jumlah Propinsi
 <pre><code>SELECT COUNT(*) AS `Total Propinsi`<br>
 FROM (SELECT kodewilayah<br>
       FROM kodewilayah<br>
-      GROUP BY LEFT(kodewilayah,2)) AS kodewilayah
+      GROUP BY namapropinsi) AS kodewilayah
 </code></pre>
 
 
@@ -53,7 +53,7 @@ FROM kodewilayah</code></pre>
 <pre><code>SELECT (SELECT COUNT(*)
         FROM (SELECT NULL 
               FROM kodewilayah
-              GROUP BY LEFT(kodewilayah,2)) Propinsi) AS 'Total Propinsi',
+              GROUP BY namapropinsi) Propinsi) AS 'Total Propinsi',
        (SELECT COUNT(*)
         FROM (SELECT NULL 
               FROM kodewilayah 
