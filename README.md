@@ -1,5 +1,5 @@
 SQL SCRIPT (MYSQL)
-<br/><br/><p><a href="#" style="color:red!important; font-size:1.3em;">PERHATIAN</a></p><p><a href="#" style="color:orange!important; font-size:1.2em">BRANCH INI SUDAH KADALUWARSA. TIDAK LAGI LAYAK PAKAI. UNTUK SEMENTARA AKAN DIBIARKAN SAMPAI DIPUTUSKAN UNTUK DIHAPUS.</a></p><br/>
+<br/><br/><p><a href="" style="color:red!important; font-size:1.3em;">PERHATIAN</a></p><p><a href="" style="color:orange!important; font-size:1.2em">BRANCH INI SUDAH KADALUWARSA. TIDAK LAGI LAYAK PAKAI. UNTUK SEMENTARA AKAN DIBIARKAN SAMPAI DIPUTUSKAN UNTUK DIHAPUS.</a></p><br/>
 <h3><strong>Daftar Kode Wilayah NKRI</strong> (+KODE POS)</h3>Sumber:<a>https://www.nomor.net</a>
 
 <br>Update per 23 Juli 2020:<br/>
