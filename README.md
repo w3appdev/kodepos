@@ -1,5 +1,5 @@
 SQL SCRIPT (MYSQL)
-<h3><strong>Daftar Kode Wilayah NKRI</strong> (+KODE POS)</h3>Sumber:<a href="https://www.nomor.net">https://www.nomor.net</a>
+<h3><strong>Daftar Kode Wilayah NKRI</strong> (+KODE POS)</h3>Sumber:<a>https://www.nomor.net</a>
 
 <br>Update per 23 Juli 2020:<br/>
 <b>34</b> provinsi, <b>514</b> kota+kabupaten, <b>7.201</b> kecamatan/distrik, <b>83.436</b> desa/kelurahan.
